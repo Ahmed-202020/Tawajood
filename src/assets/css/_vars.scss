@@ -1,0 +1,64 @@
+//colors 
+$white : #ffffff ; 
+$black : #3a3a3a ; 
+$light-bg : #e9f1fc ; 
+$shadow : #e2e2e2 ; 
+$light-line: #f6f1ff ; 
+$btn-1 : #40c2a4 ; 
+$btn-2: #4080c2 ; 
+$icon-color : $btn-1 ; 
+$title : $btn-2 ; 
+$link-color : $btn-2 ; 
+$active-link : $btn-1 ; 
+//fonts 
+
+@font-face{
+    font-family: lato ;
+    src:url("../fonts/Lato-Regular.ttf") ;
+}
+html{
+    overflow-x: hidden ;
+    .modal-open{
+        padding-right: 0 !important;
+    }
+}
+body{
+    font-family: lato , "sans-serif " !important ;
+    overflow: hidden ;
+    background-color: $white !important ;
+    padding-right: 0 !important ;
+    font-size: 17pt !important ;
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+}
+
+//classes
+
+.active{
+    color: $active-link !important ;
+    position: relative ;
+    font-weight: bold ;
+    &::after{
+        position: absolute ;
+        content: "" ;
+        background-color: $active-link ;
+        width: 25%  ;
+        height: 5px ;
+        bottom: 0px ;
+        left: 50% ;
+        transform: translateX(-50% );
+        -webkit-transform: translateX(-50% );
+        -moz-transform: translateX(-50% );
+        -ms-transform: translateX(-50% );
+        -o-transform: translateX(-50% );
+        border-radius: 3px ;
+        -webkit-border-radius: 3px ;
+        -moz-border-radius: 3px ;
+        -ms-border-radius: 3px ;
+        -o-border-radius: 3px ;
+    }
+}
