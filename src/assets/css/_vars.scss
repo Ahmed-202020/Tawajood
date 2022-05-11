@@ -55,6 +55,15 @@ body{
         -webkit-filter: brightness(90%);
     }
 }
+%title{
+    text-align: center ;
+    font-size: 23pt ;
+    margin-bottom: 120px ;
+    .text{
+        color: $link-color ;
+        font-weight: bold ;
+    }
+}
 //classes
 .navbar{
     .active{

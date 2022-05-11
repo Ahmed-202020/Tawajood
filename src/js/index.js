@@ -18,4 +18,20 @@ $(function(){
             $(this).text("العربية") ;  
         }
     });
+    $(".our-services-2 .bars .btn").on("click" , function(){
+        $(".our-services-2 .bars .btn").removeClass("active-bar") ; 
+        $(this).addClass("active-bar") ; 
+    }) ; 
+    $(' [data-link="app"] ').on("click" , function(){
+        $(".web-text").hide() ; 
+        $(".app-text").show() ; 
+        $(".btn-web").hide() ; 
+        $(".btn-app").show() ; 
+    }) ;
+    $(' [data-link="web"] ').on("click" , function(){
+        $(".app-text").hide() ; 
+        $(".web-text").css("display" , "inline-block") ; 
+        $(".btn-app").hide() ; 
+        $(".btn-web").css("display" , "inline-block")
+    })
 });

@@ -120,13 +120,7 @@ header{
 .our-services{
     padding: 180px 50px ;
     .title{
-        text-align: center ;
-        font-size: 23pt ;
-        margin-bottom: 120px ;
-        .text{
-            color: $link-color ;
-            font-weight: bold ;
-        }
+        @extend %title ; 
     }
     .show-case{
         display: grid ;
@@ -183,27 +177,248 @@ header{
         }
     }
 }
-.call-us{
+body>.overlay{
     position: relative ;
-    background-color: $white;
-    background-image: url("../img/Group\ 40878.png");
+    background-image: url("../img/bg.png");
     background-position: center 100% ;
     background-repeat: no-repeat ;
     background-size: cover ;
-    height: 100vh;
+    padding-block: 235px ;
+    z-index: 10 ;
+    margin-top: -150px ;
+    transform: scaleX(1.1);
+    -webkit-transform: scaleX(1.1);
+    -moz-transform: scaleX(1.1);
+    -ms-transform: scaleX(1.1);
+    -o-transform: scaleX(1.1);
+}
+.call-us{
+    position: relative ;
+    background-image: url("../img/Group\ 40878.png");
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    padding-block: 340px  ;
+    margin-top: -465px ;
+    display: flex ;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center ;
     .show-case{
-        position: absolute ;
-        top: 50% ;
-        left: 50% ;
-        transform: translate(-50% , -50% );
-        -webkit-transform: translate(-50% , -50% );
-        -moz-transform: translate(-50% , -50% );
-        -ms-transform: translate(-50% , -50% );
-        -o-transform: translate(-50% , -50% );
         text-align: center ;
+        margin-top: 160px ;
+        .title{
+            color: $white;
+            font-weight: bold ;
+            font-size: 22pt;
+            margin-bottom: 20px;
+        }
+        .text{
+            color: $white ;
+            padding-inline: 310px;
+            margin-bottom: 50px;
+        }
+        .btn{
+            @extend %btn ; 
+            padding-inline: 80px ;
+            box-shadow: 0 0 2px #fefefe ;
+        }
     }
 }
-
+.our-services-2{
+    padding: 180px 50px ;
+    .title{
+        @extend %title ; 
+    }
+    .show-case{
+        display: grid ;
+        grid-template-columns: repeat(auto-fill , minmax(calc(100%/3) , 1fr));
+        gap: 60px ;
+        .image{
+            width: 100% ;
+            img{
+                width: 100% ;
+                min-height: 100% ;
+                max-height: 100% ;
+            }
+        }
+        .contents{
+            .bars{
+                position: relative ;
+                display: flex ;
+                align-items: center ;
+                justify-content: center ;
+                margin-bottom: 60px ;
+                .btn{
+                    box-shadow: none ;
+                    width: 50% ;
+                    color: $light-line;
+                    font-size: 17pt ;
+                    font-weight: bold ;
+                }
+                .active-bar{
+                    color: $link-color ;
+                    position: relative;
+                    &::after{
+                        z-index: 20;
+                        left: 0 ;
+                        position: absolute ;
+                        content: "" ;
+                        width: 100% ;
+                        height: 5px ;
+                        background-color: $link-color ;
+                        border-radius: 3px ;
+                        -webkit-border-radius: 3px ;
+                        -moz-border-radius: 3px ;
+                        -ms-border-radius: 3px ;
+                        -o-border-radius: 3px ;
+                        bottom: -22px;
+                    }
+                }
+                &::after{
+                    position: absolute ;
+                    content: "" ;
+                    width: 90% ;
+                    height: 5px ;
+                    background-color: $light-line ;
+                    border-radius: 3px ;
+                    -webkit-border-radius: 3px ;
+                    -moz-border-radius: 3px ;
+                    -ms-border-radius: 3px ;
+                    -o-border-radius: 3px ;
+                    bottom: -22px;
+                }
+            }
+            .text{
+                color: $black ;
+                padding-inline: 18px ;
+                margin-bottom: 118px ;
+                min-height: 375px ;
+                .web-text{
+                    display: none ;
+                }
+            }
+            &>.btn{
+                @extend %btn ; 
+                padding-inline: 65px ;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+            }
+            .btn-web{
+                display: none ;
+            }
+        }
+    }
+}
+.call-us.hosting-services{
+    background-image: url("../img/Group\ 40879.png");
+    padding-block: 340px   ;
+    .show-case{
+        .text{
+            padding-inline: 0 ;
+        }
+        &>.title{
+            margin-bottom: 100px ;
+            .text{
+                margin-bottom: -8px ;
+                padding-inline: 0 ;
+            }
+        }
+        .contents{
+            display: grid ;
+            grid-template-columns: repeat(auto-fill , minmax(calc(100% /4) , 1fr));
+            gap: 20pt  ;
+            .content{
+                padding-block: 50px  ;
+                position: relative;
+                background-image: radial-gradient( #4093aa  , #33748a ) ;
+                box-shadow: 0 0 2px  $custom-white ;
+                border-radius: 10px ;
+                -webkit-border-radius: 10px ;
+                -moz-border-radius: 10px ;
+                -ms-border-radius: 10px ;
+                -o-border-radius: 10px ;
+                .title{
+                    color: #19e9b9 ;
+                    font-size: 16pt ;
+                    padding: 0 25px 0 120px;
+                    text-align: start;
+                    margin-bottom: 10px ;
+                }
+                .text{
+                    padding: 0 25px 0 120px;
+                    text-align: start ;
+                    font-size: 14pt ;
+                }
+                .btn{
+                    padding-inline: 50px ;
+                    border-radius: 8px ;
+                    -webkit-border-radius: 8px ;
+                    -moz-border-radius: 8px ;
+                    -ms-border-radius: 8px ;
+                    -o-border-radius: 8px ;
+                    box-shadow:  1px 1px 1px 1px $light-bg;
+                }
+                .image{
+                    position: absolute ;
+                    top: 60px ;
+                    left: 30px ;
+                    width: 18% ;
+                    img{
+                        width: 100% ;
+                    }
+                }
+            }
+            .content:not(:nth-child(2)){
+                box-shadow: 0 0 2px  $black ;
+                .btn{
+                    background-image: none ;
+                    background-color: $custom-white;
+                    color: $link-color ;
+                    font-weight: bold ;
+                    font-size: 17pt ;
+                }
+            }
+            .content:nth-child(2){
+                height: 125% ;
+                margin-top: -30px ;
+                background-color: $custom-white;
+                background-image: none ;
+                .title{
+                    color: $active-link ;
+                }
+                .text{
+                    color: $black ;
+                    margin-bottom: 80px ;
+                }
+            }
+        }
+    }
+}
+.our-services.why-us{
+    .title{
+        margin-bottom: 25px ;
+    }
+    .breef{
+        text-align: center ;
+        color: $black ;
+        margin-bottom: 145px ;
+        padding-inline: 45px ;
+        padding-inline: 250px ;
+    }
+    .show-case{
+        .card{
+            .image{
+                img{
+                    width: 65% ;
+                }
+            }
+        }
+    }
+}
 
 //rtl 
 html[dir = "rtl"]{
@@ -244,6 +459,24 @@ html[dir = "rtl"]{
             }
         }
     }
+    .call-us.hosting-services{
+        .show-case{
+            .contents{
+                .content{
+                    .title{
+                        padding: 0 120px 0 25px ;
+                    }
+                    .text{
+                        padding: 0 120px 0 25px ;
+                    }
+                    .image{
+                        left: initial  ;
+                        right: 30px ;
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Responsive-Design(ltr)
@@ -270,6 +503,16 @@ html[dir = "rtl"]{
             }
         }
     }
+    .our-services-2{
+        .show-case{
+            .contents{
+                .text{
+                    margin-bottom: 42px ;
+                    min-height: 375px ;
+                }
+            }
+        }
+    }
 }
 @media(max-width: 1280.98px){
     header{
@@ -284,6 +527,15 @@ html[dir = "rtl"]{
                             font-size: 14pt ;
                         }
                     }
+                }
+            }
+        }
+    }
+    .our-services-2{
+        .show-case{
+            .contents{
+                .text{
+                    padding-inline: 5px ;
                 }
             }
         }
@@ -313,6 +565,15 @@ html[dir = "rtl"]{
                     .text{
                         font-size: 15pt ;
                     }
+                }
+            }
+        }
+    }
+    .our-services-2{
+        .show-case{
+            .contents{
+                .text{
+                    min-height: 410px ;
                 }
             }
         }
@@ -356,6 +617,49 @@ html[dir = "rtl"]{
     .our-services{
         .show-case{
             grid-template-columns: repeat(auto-fill , minmax(calc(100% / 3) , 1fr)) !important ;
+        }
+    }
+    .call-us{
+        .show-case{
+            .text{
+                padding-inline: 205px ;
+            }
+        }
+    }
+    .our-services-2{
+        .show-case{
+            display: grid ;
+            grid-template-columns: repeat(auto-fill , minmax(calc(100% / 1) , 1fr));
+            .contents{
+                .text{
+                    min-height: 250px ;
+                }
+            }
+        }
+    }
+    .call-us.hosting-services{
+        .show-case{
+            .contents{
+                padding-inline: 30px ;
+                grid-template-columns: repeat(auto-fill , minmax(calc(100% / 3) , 1fr)) !important ;
+                .content{
+                    .image{
+                        width: 12% ;
+                    }
+                    &:nth-child(2){
+                        height: 100% ;
+                        margin-top: 0 ;
+                        .text{
+                            margin-bottom: 50px ;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .our-services.why-us{
+        .breef{
+            padding-inline: 140px ;
         }
     }
 }
@@ -403,6 +707,15 @@ html[dir = "rtl"]{
             }
         }
     }
+    .our-services-2{
+        .show-case{
+            .contents{
+                .text{
+                    min-height: 272px ;
+                }
+            }
+        }
+    }
 }
 @media(max-width: 912px){
     header{
@@ -426,6 +739,21 @@ html[dir = "rtl"]{
             }
         }
     }
+    .call-us{
+        .show-case{
+            .title{
+                font-size: 18pt ;
+            }
+            .text{
+                padding-inline: 150px ;
+            }
+        }
+    }
+    .our-services.why-us{
+        .breef{
+            padding-inline: 90px ;
+        }
+    }
 }
 @media(max-width: 820px){
     header{
@@ -435,6 +763,18 @@ html[dir = "rtl"]{
                 .carousel-caption{
                     .text{
                         font-size: 12pt ;
+                    }
+                }
+            }
+        }
+    }
+    .call-us.hosting-services{
+        .show-case{
+            .contents{
+                grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) !important ;
+                .content{
+                    .image{
+                        width: 7% ;
                     }
                 }
             }
@@ -464,6 +804,13 @@ html[dir = "rtl"]{
     }
     .our-services{
         padding: 180px 20px ;
+    }
+    .call-us{
+        .show-case{
+            .text{
+                padding-inline: 100px ;
+            }
+        }
     }
 }
 @media(max-width: 575.98px){
@@ -513,6 +860,24 @@ html[dir = "rtl"]{
             grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) !important ;
         }
     }
+    .call-us{
+        .show-case{
+            .text{
+                padding-inline: 45px ;
+            }
+        }
+    }
+    .call-us.hosting-services{
+        .show-case{
+            .contents{
+                .content{
+                    .image{
+                        width: 9% ;
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width: 500px){
     header{
@@ -544,6 +909,65 @@ html[dir = "rtl"]{
     .contact{
         margin-top: -200px ;
         padding: 230px 50px 50px ;
+    }
+    .call-us{
+        padding-block: 390px ;
+        .show-case{
+            .title{
+                font-size: 14pt ;
+            }
+            .text{
+                padding-inline: 20px ;
+                font-size: 12pt ;
+            }
+            .btn{
+                padding-inline: 60px ;
+                font-size: 14pt ;
+            }
+        }
+    }
+    .our-services-2{
+        padding: 180px 10px ;
+        .show-case{
+            .contents{
+                .bars{
+                    .btn{
+                        font-size: 12pt ;
+                    }
+                }
+                .text{
+                    font-size: 10pt ;
+                    margin-bottom: 0 ;
+                    min-height: 240px ;
+                }
+                &>.btn{
+                    font-size: 12pt ;
+                    padding-inline: 25px ;
+                }
+            }
+        }
+    }
+    .call-us.hosting-services{
+        .show-case{
+            .title{
+                .text{
+                    font-size: 15pt  ;
+                }    
+            }
+            .contents{
+                padding-inline: 5px ;
+                .content{
+                    .image{
+                        width: 12% ;
+                    }
+                }
+            }
+        }
+    }
+    .our-services.why-us{
+        .breef{
+            padding-inline: 10px ;
+        }
     }
 }
 @media(max-width: 360px){
@@ -597,6 +1021,43 @@ html[dir = "rtl"]{
     .our-services{
         padding: 180px 10px ;
     }
+    .our-services-2{
+        .show-case{
+            .contents{
+                .bars{
+                    .btn{
+                        font-size: 8pt ;
+                    }
+                }
+                .text{
+                    margin-bottom: 15px ;
+                    min-height: 300px ;
+                }
+            }
+        }
+    }
+    .call-us.hosting-services{
+        .show-case{
+            .contents{
+                padding-inline: 5px ;
+                .content{
+                    .image{
+                        width: 14% ;
+                    }
+                    .title{
+                        padding: 0 20px 0 100px ;
+                    }
+                    .text{
+                        padding: 0 20px 0 100px ;
+                    }
+                    .btn{
+                        font-size: 14pt !important ;
+                        padding-inline: 30px ;
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Responsive-Design(rtl)
@@ -648,6 +1109,24 @@ html[dir = "rtl"]{
             #slider{
                 &>.btn{
                     right: 19% !important ;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 280px){
+    html[dir = "rtl"]{
+        .call-us.hosting-services{
+            .show-case{
+                .contents{
+                    .content{
+                        .title{
+                            padding: 0 100px 0 20px ;
+                        }
+                        .text{
+                            padding: 0 100px 0 20px ;
+                        }
+                    }
                 }
             }
         }
