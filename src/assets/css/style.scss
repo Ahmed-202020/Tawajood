@@ -219,9 +219,14 @@ body>.overlay{
             margin-bottom: 50px;
         }
         .btn{
-            @extend %btn ; 
+            @extend%btn ;
             padding-inline: 80px ;
-            box-shadow: 0 0 2px #fefefe ;
+            box-shadow: 0 4px  4px  rgba($black ,  0.2)  ;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
         }
     }
 }
@@ -403,10 +408,7 @@ body>.overlay{
         margin-bottom: 25px ;
     }
     .breef{
-        text-align: center ;
-        color: $black ;
-        margin-bottom: 145px ;
-        padding-inline: 45px ;
+        @extend %breef ; 
         padding-inline: 250px ;
     }
     .show-case{
@@ -419,6 +421,222 @@ body>.overlay{
         }
     }
 }
+.statistics.contact{
+    background-color: transparent ;
+    background-image: linear-gradient($btn-1 , $btn-2);
+    margin-top: 0 ;
+    padding: 80px 50px ;
+    .content{
+        flex-direction: column ;
+        .icon{
+            border: 6px solid #c7d5e3;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px ;
+            line-height: 65px ;
+            img{
+                width: 65% ;
+            }
+        }
+        .text{
+            color: $white ;
+            margin-left: 0 ;
+            min-width: auto ;
+            max-width: auto ;
+            font-size: 15pt ;
+            margin-bottom: 5px ;
+        }
+        .num{
+            color: $white ;
+            font-weight: bold ;
+            font-size: 22pt ;
+        }
+    }
+}
+.our-services.why-us.projects{
+    background-color: transparent ;
+    .breef{
+        padding-inline: 275px ;
+    }
+    .show-case{
+        .card{
+            border: none ;
+            box-shadow: 5px 5px 8px $shadow;
+            background-color: $white ;
+            border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -ms-border-radius: 10px ;
+            -o-border-radius: 10px ;
+            padding: 0 ;
+            min-height: auto ;
+            .image{
+                background: none  ;
+                position: initial ;
+                width: 100% ;
+                height: 90% ;
+                border: 0 ;
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+                img{
+                    width: 100% ;
+                    height: 100% ;
+                    border-top-left-radius: 10px ;
+                    border-top-right-radius: 10px ;
+                }
+            }
+            .card-body{
+                display: flex ;
+                align-items: center ;
+                justify-content: space-between ;
+                padding-inline: 30px ;
+                .icon{
+                    position: relative;
+                    img{
+                        transform: rotate(90deg);
+                        -webkit-transform: rotate(90deg);
+                        -moz-transform: rotate(90deg);
+                        -ms-transform: rotate(90deg);
+                        -o-transform: rotate(90deg);
+                    }
+                    &::after{
+                        position: absolute ;
+                        content: "" ;
+                        width: 2px ;
+                        height: 45px ;
+                        top: -5px ;
+                        left: -39px ;
+                        background-color: $light-line  ;
+                    }
+                }
+                .card-title{
+                    font-size: 16pt ;
+                    margin-bottom: 0 ;
+                }
+            }
+        }
+    }
+}
+.overlay.overlay-2{
+    padding-block: 300px ;
+}
+.call-us.view-projects{
+    margin-top: -580px ;
+    .show-case{
+        margin-top: 300px ;
+        .title{
+            font-size: 25pt ;
+        }
+        .text{
+            font-size: 22pt ;
+        }
+        .btn{
+            padding-inline: 60px ;
+        }
+    }
+}
+.our-services.customer-opinions{
+    padding: 150px 0 ;
+    .title{
+        @extend %title ; 
+        margin-bottom: 20px 
+    }
+    .breef{
+        @extend %breef ;
+        padding-inline: 275px ;
+    }
+    .customer-slider{
+        .card{
+            background-color: transparent ;
+            border-color: $light-line ;
+            border-top-color: $btn-1 ;
+            padding: 50px 10px ;
+            min-height: 370px ;
+            transition: all 300ms ease;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            .image{
+                img{
+                    width: 90% ;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50% , -50%);
+                }
+            }
+            .card-body{
+                .card-title{
+                    font-size: 20pt ;
+                    margin-bottom: 15px ;
+                }
+                .card-text{
+                    padding-inline: 40px ;
+                }
+            }
+        }
+    }
+    .owl-carousel{
+        .owl-stage-outer{
+            height: 650px ;
+            .owl-stage{
+                padding-top: 120px ;
+            }
+        }
+        .owl-item{
+            margin-bottom:100px;
+            margin-top: 50px ;
+            position: relative ;
+        }
+        .owl-dots{
+            text-align: center;
+            margin-top: 80px;
+            .owl-dot{
+                height: 8px;
+                width: 30px;
+                background: $white;
+                border: 2px solid $btn-2 ;
+                border-radius: 15px;
+                display: inline-block;
+                margin: 0px 2px;
+                -webkit-transition: all 0.5s ease 0s;
+                -o-transition: all 0.5s ease 0s;
+                transition: all 0.5s ease 0s;
+            }
+            .active{
+                background: $btn-1 ; 
+                border: 2px solid $btn-1 ;
+                width: 90px;
+            }
+        }
+        .owl-dots.disabled{
+            display: inherit !important;
+        }
+        .center{
+            position: relative ;
+            top: -50px  ;
+            margin-right: -.45% !important ;
+            .card{
+                width: 90%  ;
+                height: 480px ;
+                background-color: $btn-2 !important ;
+                .card-body{
+                    .card-title{
+                        color: $white ;
+                    }
+                    .card-text{
+                        color: $white ;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 //rtl 
 html[dir = "rtl"]{
@@ -472,6 +690,34 @@ html[dir = "rtl"]{
                     .image{
                         left: initial  ;
                         right: 30px ;
+                    }
+                }
+            }
+        }
+    }
+    .statistics.contact{
+        .content{
+            .text{
+                margin-right: 0 ;
+            }
+        }
+    }
+    .our-services.why-us.projects{
+        .show-case{
+            .card{
+                .card-body{
+                    .icon{
+                        img{
+                            transform: rotate(-90deg);
+                            -webkit-transform: rotate(-90deg);
+                            -moz-transform: rotate(-90deg);
+                            -ms-transform: rotate(-90deg);
+                            -o-transform: rotate(-90deg);
+                        }
+                        &::after{
+                            right: -39px ;
+                            left: initial ;
+                        }
                     }
                 }
             }
@@ -662,6 +908,11 @@ html[dir = "rtl"]{
             padding-inline: 140px ;
         }
     }
+    .our-services.why-us.projects{
+        .breef{
+            padding-inline: 200px ;
+        }
+    }
 }
 @media(max-width: 991.98px){
     header{
@@ -752,6 +1003,11 @@ html[dir = "rtl"]{
     .our-services.why-us{
         .breef{
             padding-inline: 90px ;
+        }
+    }
+    .our-services.why-us.projects{
+        .breef{
+            padding-inline: 150px ;
         }
     }
 }
@@ -878,6 +1134,11 @@ html[dir = "rtl"]{
             }
         }
     }
+    .our-services.why-us.projects{
+        .breef{
+            padding-inline: 40px ;
+        }
+    }
 }
 @media(max-width: 500px){
     header{
@@ -969,6 +1230,26 @@ html[dir = "rtl"]{
             padding-inline: 10px ;
         }
     }
+    .our-services.why-us.projects{
+        .breef{
+            padding-inline: 15px ;
+        }
+        .show-case{
+            .card{
+                .card-body{
+                    padding-inline: 24px ;
+                    .card-title{
+                        font-size: 14pt ;
+                    }
+                    .icon{
+                        &::after{
+                            left: -28px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width: 360px){
     header{
@@ -1058,6 +1339,23 @@ html[dir = "rtl"]{
             }
         }
     }
+    .our-services.why-us.projects{
+        .show-case{
+            .card{
+                .card-body{
+                    padding-inline: 20px ;
+                    .card-title{
+                        font-size: 12pt ;
+                    }
+                    .icon{
+                        &::after{
+                            left: -20px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Responsive-Design(rtl)
@@ -1103,6 +1401,24 @@ html[dir = "rtl"]{
         }
     }
 }
+@media(max-width: 500px){
+    html[dir = "rtl"]{
+        .our-services.why-us.projects{
+            .show-case{
+                .card{
+                    .card-body{
+                        .icon{
+                            &::after{
+                                right: -28px ;
+                                left: initial ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width: 575.98px){
     html[dir = "rtl"]{
         header{
@@ -1125,6 +1441,20 @@ html[dir = "rtl"]{
                         }
                         .text{
                             padding: 0 100px 0 20px ;
+                        }
+                    }
+                }
+            }
+        }
+        .our-services.why-us.projects{
+            .show-case{
+                .card{
+                    .card-body{
+                        .icon{
+                            &::after{
+                                right: -20px ;
+                                left: initial;
+                            }
                         }
                     }
                 }

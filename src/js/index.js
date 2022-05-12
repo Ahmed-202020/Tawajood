@@ -33,5 +33,8 @@ $(function(){
         $(".web-text").css("display" , "inline-block") ; 
         $(".btn-app").hide() ; 
         $(".btn-web").css("display" , "inline-block")
-    })
+    });
+    
+    $(".content .customers").countTo() ; 
+    $(".content .projects").countTo() ; 
 });
