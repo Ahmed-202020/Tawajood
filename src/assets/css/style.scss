@@ -549,6 +549,7 @@ body>.overlay{
         padding-inline: 275px ;
     }
     .customer-slider{
+        direction: ltr;
         .card{
             background-color: transparent ;
             border-color: $light-line ;
@@ -824,6 +825,20 @@ html[dir = "rtl"]{
             }
         }
     }
+    .our-services.customer-opinions{
+        .breef{
+            padding-inline: 200px ;
+        }
+        .customer-slider{
+            .card{
+                .card-body{
+                    .card-text{
+                        padding-inline: 10px ;
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width: 1024px){
     header{
@@ -965,6 +980,11 @@ html[dir = "rtl"]{
                     min-height: 272px ;
                 }
             }
+        }
+    }
+    .our-services.customer-opinions{
+        .breef{
+            padding-inline: 150px ;
         }
     }
 }
@@ -1139,6 +1159,19 @@ html[dir = "rtl"]{
             padding-inline: 40px ;
         }
     }
+    .our-services.customer-opinions{
+        .breef{
+            padding-inline: 100px ;
+        }
+        .owl-carousel{
+            .center{
+                margin-right: 0.55% !important;
+                .card{
+                    width: 99.7% ;
+                }
+            }
+        }
+    }
 }
 @media(max-width: 500px){
     header{
@@ -1248,6 +1281,11 @@ html[dir = "rtl"]{
                     }
                 }
             }
+        }
+    }
+    .our-services.customer-opinions{
+        .breef{
+            padding-inline: 10px ;
         }
     }
 }

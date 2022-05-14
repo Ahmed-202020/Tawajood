@@ -742,6 +742,10 @@ body > .overlay {
   padding-inline: 275px;
 }
 
+.our-services.customer-opinions .customer-slider {
+  direction: ltr;
+}
+
 .our-services.customer-opinions .customer-slider .card {
   background-color: transparent;
   border-color: #c7d5e3;
@@ -940,6 +944,12 @@ html[dir="rtl"] .our-services.why-us.projects .show-case .card .card-body .icon:
   .our-services-2 .show-case .contents .text {
     min-height: 410px;
   }
+  .our-services.customer-opinions .breef {
+    padding-inline: 200px;
+  }
+  .our-services.customer-opinions .customer-slider .card .card-body .card-text {
+    padding-inline: 10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1047,6 +1057,9 @@ html[dir="rtl"] .our-services.why-us.projects .show-case .card .card-body .icon:
   }
   .our-services-2 .show-case .contents .text {
     min-height: 272px;
+  }
+  .our-services.customer-opinions .breef {
+    padding-inline: 150px;
   }
 }
 
@@ -1178,6 +1191,15 @@ html[dir="rtl"] .our-services.why-us.projects .show-case .card .card-body .icon:
   .our-services.why-us.projects .breef {
     padding-inline: 40px;
   }
+  .our-services.customer-opinions .breef {
+    padding-inline: 100px;
+  }
+  .our-services.customer-opinions .owl-carousel .center {
+    margin-right: 0.55% !important;
+  }
+  .our-services.customer-opinions .owl-carousel .center .card {
+    width: 99.7%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1257,6 +1279,9 @@ html[dir="rtl"] .our-services.why-us.projects .show-case .card .card-body .icon:
   }
   .our-services.why-us.projects .show-case .card .card-body .icon::after {
     left: -28px;
+  }
+  .our-services.customer-opinions .breef {
+    padding-inline: 10px;
   }
 }
 
