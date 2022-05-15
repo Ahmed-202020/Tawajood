@@ -35,6 +35,19 @@ $(function(){
         $(".btn-web").css("display" , "inline-block")
     });
     
+    $(".messages .image").on("click" , function(){
+        $(".contac").fadeToggle() ;
+        if($(".messages .message ").hasClass("active")){
+            $(".messages .message ").removeClass("active") ; 
+            $(".messages .close").addClass("active") ; 
+        }else{
+            $(".messages .close").removeClass("active") ; 
+            $(".messages .message").addClass("active") ; 
+        }
+    })
+
+
+
     $(".content .customers").countTo() ; 
     $(".content .projects").countTo() ; 
 });
