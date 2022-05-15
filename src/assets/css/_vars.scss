@@ -97,3 +97,12 @@ body{
         }
     }
 }
+.footer{
+    .pages-links{
+        .item{
+            .active{
+                color: $active-link !important ;
+            }
+        }
+    }
+}

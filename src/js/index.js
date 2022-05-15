@@ -34,7 +34,6 @@ $(function(){
         $(".btn-app").hide() ; 
         $(".btn-web").css("display" , "inline-block")
     });
-    
     $(".messages .image").on("click" , function(){
         $(".contac").fadeToggle() ;
         if($(".messages .message ").hasClass("active")){
