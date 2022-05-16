@@ -1,0 +1,199 @@
+.about-us{
+    background-image: url("../img/Group\ 40880.png");
+    background-position: center center ;
+    background-repeat:no-repeat ;
+    background-size: cover ;
+    padding: 350px 50px 550px ;
+    margin-top: -200px ;
+    text-align: center ;
+    color: $white ;
+    .title{
+        font-weight: bold ;
+        font-size: 22pt ;
+        margin-bottom: 25px ;
+    }
+    .text{
+        padding-inline: 250px ;
+    }
+    .text + .text{
+        margin-top: 25px ;
+    }
+}
+.about-company{
+    padding: 450px 50px 200px ;
+    margin-top: -400px ;
+    z-index: -1 ;
+    background-color: $custom-white ;
+    position: relative;
+    display: grid ;
+    grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) ;
+    .image{
+        width: 100% ;
+        img{
+            width: 100% ;
+        }
+    }
+    .content{
+        margin-top:150px ;
+        .mission{
+            background-color: $white ;
+            box-shadow:  0 0 5px rgba($black , 0.2);
+            padding: 50px  50px  80px ;
+            border-radius: 8px ;
+            -webkit-border-radius: 8px ;
+            -moz-border-radius: 8px ;
+            -ms-border-radius: 8px ;
+            -o-border-radius: 8px ;
+            .title{
+                font-weight: bolder ;
+                color: #000 ;
+                font-size: 22pt ;
+                margin-bottom: 15px ;
+            }
+            .text{
+                color: $black ;
+                line-height: 1.65 ;
+            }
+        }
+    }
+    .vision{
+        background-image: linear-gradient($btn-1 , $btn-2) ;
+        position: relative;
+        left: 50% ;
+        bottom: 10%  ;
+        padding: 50px  50px  80px ;
+        width: 98% ;
+        border-radius: 8px ;
+        -webkit-border-radius: 8px ;
+        -moz-border-radius: 8px ;
+        -ms-border-radius: 8px ;
+        -o-border-radius: 8px ;
+        transform: translateX(0 );
+        -webkit-transform: translateX(0 );
+        -moz-transform: translateX(0 );
+        -ms-transform: translateX(0 );
+        -o-transform: translateX(0 );
+        .title{
+            font-weight: bolder ;
+            color: $white ;
+            font-size: 27pt ;
+            margin-bottom: 15px ;
+        }
+        .text{
+            color: $white ;
+            line-height: 1.65 ;
+        }
+        &::before{
+            position: absolute ;
+            content: "";
+            background-image: url("../img/5a299757b7d345.142740231512675159753.png");
+            background-position: center ;
+            background-repeat: no-repeat ;
+            background-size: cover ;
+            width: 100% ;
+            min-height: 90% ;
+        }
+    }
+}
+.about-us.projects{
+    padding: 400px 50px 500px ;
+    background-size: 100% 80%  ;
+    margin-top: -320px ;
+}
+.projects-page{
+    padding-top: 80px !important ;
+}
+
+//rtl 
+html[dir = "rtl"]{
+    .about-company{
+        .vision{
+            right: 50% ;
+            left: initial ;
+        }
+    }
+}
+@media(max-width: 1399.98px){
+    .about-us.projects{
+        background-size: cover  ;
+        padding: 400px 50px 410px ;
+        margin-top: -250px ;
+    }
+}
+@media(max-width: 1199.98px){
+    .about-us{
+        .text{
+            padding-inline: 200px ;
+        }
+    }
+}
+@media(max-width: 1024px){
+    .about-us{
+        .text{
+            padding-inline: 100px ;
+        }
+    }
+}
+@media(max-width: 991.98px){
+    .about-company{
+        .vision{
+            width: 100% ;
+        }
+    }
+}
+@media(max-width: 912px){
+    .about-us{
+        .text{
+            padding-inline: 50px ;
+        }
+    }
+    .about-company{
+        grid-template-columns: repeat(auto-fill , minmax(calc(100% / 1) , 1fr)) ;
+        .image{
+            order: 1 ;
+        }
+        .content{
+            margin-top: 50px ;
+            order: 2 ;
+        }
+        .vision{
+            position: initial ;
+            order: 3 ;
+            margin-top: 50px ;
+        }
+    }
+}
+@media(max-width: 575.98px){
+    .about-us{
+        margin-top: -265px ;
+        .text{
+            padding-inline: 20px ;
+        }
+    }
+}
+@media(max-width: 500px){
+    .about-us , .about-us.about-us.projects{
+        margin-top: -400px ;
+        padding: 500px 10px 400px ;
+        .text{
+            padding-inline: 10px ;
+        }
+    }
+    .about-company{
+        padding: 450px 10px 200px ;
+    }
+}
+@media(max-width: 280px){
+    .about-company{
+        .content{
+            .mission{
+                text-align: center ;
+                padding: 50px 15px 80px ; 
+            }
+        }
+        .vision{
+            text-align: center ;
+            padding: 50px 15px 80px ; 
+        }
+    }
+}
