@@ -1,0 +1,144 @@
+.about-us.contact-us{
+    padding: 400px 50px 500px ;
+    background-image: url("../img/Group\ 40880.png");
+    background-size: 100% 75% ;
+    margin-top: -330px ;
+    .title{
+        font-weight: bolder ;
+        font-size: 25pt ;
+        margin-bottom: 40px ;
+    }
+    .form-group{
+        .show-case{
+            display: flex ;
+            justify-content: center ;
+            align-items: baseline ;
+            .inputs{
+                margin-right: 30px ;
+                width: 500px;
+                .form-control{
+                    padding: 10px 20px ;
+                    border: 1px solid $light-line ;
+                    box-shadow: none ;
+                    &::placeholder{
+                        color: $shadow ;
+                    }
+                    &:not(:last-child){
+                        margin-bottom: 15px ;
+                    }
+                }
+            }
+            .message{
+                margin-left: 30px ;
+                width: 500px ;
+                .form-control{
+                    padding: 10px 20px ;
+                    border: 1px solid $light-line ;
+                    box-shadow: none ;
+                    min-height: 110px ;
+                    &::placeholder{
+                        color: $shadow ;
+                    }
+                }
+            }
+        }
+        .btn{
+            @extend%btn ;
+            margin-top: 50px ;
+            padding-inline: 100px ;
+            box-shadow: 0 4px 4px rgba($black , 0.2) ;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+        }
+    }
+}
+.contact.custom-contact{
+    position: relative ;
+    z-index: -1 ;
+    margin-top: -490px !important ;
+    padding: 350px 50px 50px !important ;
+}
+.map-contact{
+    width: 100% ;
+    height: 500px ;
+    iframe{
+        width: 100% ;
+        height: 100% ;
+    }
+}
+//rtl
+html[dir = "rtl"]{
+    .about-us.contact-us{
+        .form-group{
+            .show-case{
+                .inputs{
+                    margin-left: 30px ;
+                    margin-right: 0 ;
+                }
+                .message{
+                    margin-right: 30px ;
+                    margin-left: initial ;
+                }
+            }
+        }
+    }
+}
+
+//Responsive(ltr)
+@media(max-width:1024px){
+    .about-us.contact-us{
+        background-size: 100% 60% ;
+        margin-top: -360px ;
+    }
+    .contact.custom-contact{
+        margin-top: -580px !important ;
+    }
+}
+@media(max-width:768px){
+    .about-us.contact-us{
+        background-size: cover ;
+        margin-top: -280px ;
+        padding: 400px 50px 300px ;
+    }
+    .contact.custom-contact{
+        margin-top: -310px !important ;
+    }
+}
+@media(max-width:575.98px){
+    .about-us.contact-us{
+        .form-group{
+            .show-case{
+                flex-direction: column ;
+                align-items: center ;
+                justify-content: center ;
+                .inputs{
+                    margin: 0 !important ;
+                    width: 100%;
+                }
+                .message{
+                    width: 100% ;
+                    margin: 0 !important ;
+                    .form-control{
+                        margin-top: 15px ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .about-us.contact-us{
+        padding-inline: 10px ;
+    }
+    .contact.custom-contact{
+        padding: 300px 50px 50px !important;
+    }
+}
+@media(max-width:360px){
+    .contact.custom-contact{
+        padding: 275px 7px 50px !important;
+    }
+}
