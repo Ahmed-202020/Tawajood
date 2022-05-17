@@ -1,0 +1,236 @@
+header{
+    .banner{
+        background-image: url("../img/Group\ 40881.png") ;
+        background-position: center center  ;
+        background-size: cover ;
+        background-repeat: no-repeat ;
+        padding: 255px 50px  ;
+        margin-top: -100px ;
+        .title{
+            color: $white ;
+            font-weight: bolder ;
+            font-size: 22pt ;
+            margin-bottom: 30px ;
+        }
+        .text{
+            color: $white ;
+            width: 51% ;
+        }
+    }
+}
+.features{
+    display: grid ;
+    grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2 ) , 1fr));
+    padding: 120px 50px ;
+    .image{
+        margin-top: 80px ;
+        width: 75% ;
+        img{
+            width: 100% ;
+        }
+    }
+    .show-case{
+        .feature{
+            position: relative ;
+            .content{
+                .title{
+                    color: $btn-2 ;
+                    font-size: 20pt ;
+                    font-weight: bold ;
+                    margin-bottom: 15px ;
+                }
+                .text{
+                    color: $black ;
+                    font-size: 16pt ;
+                }
+            }
+            .icon{
+                left: -135px ;
+                position: absolute ;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background:                                      linear-gradient($white) padding-box ,  linear-gradient(to right, $white, $light-line) border-box;
+                border: 8px solid transparent;
+                display: inline-block ;
+                width: 110px ;
+                height: 110px ;
+                line-height: 90px ;
+                text-align: center ;
+                border-radius: 50em;
+                -webkit-border-radius: 50em;
+                -moz-border-radius: 50em;
+                -ms-border-radius: 50em;
+                -o-border-radius: 50em;
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                img{
+                    padding: 10px ;
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                }
+            }
+            &:not(:last-child){
+                margin-bottom: 45px ;
+            }
+        }
+    }
+}
+
+//rtl
+html[dir ="rtl"]{
+    header{
+        .banner{
+            transform: rotateY(-180deg);
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            .title , .text{
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                margin-right: auto ;
+            }
+        }
+    }
+    .features{
+        .show-case{
+            .feature{
+                .icon{
+                    right: -135px ;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1399.98px){
+    header{
+        .banner{
+            background-size: 100% 100% ;
+        }
+    }
+}
+@media(max-width:1199.98px){
+    .features{
+        grid-template-columns:repeat(auto-fill, minmax(calc(100% / 1), 1fr)) ; 
+        .image{
+            margin-inline: auto ;
+            margin-bottom: 80px ;
+        }
+        .show-case{
+            .feature{
+                .content{
+                    text-align: center ;
+                    .text{
+                        padding-inline: 100px ;
+                    }
+                }
+                .icon{
+                    position: relative ;
+                    text-align: center ;
+                    left: 50%  ;
+                    transform: translateX(-50% )  rotate(90deg) ;
+                    -webkit-transform: translateX(-50% )  rotate(90deg) ;
+                    -moz-transform: translateX(-50% )  rotate(90deg) ;
+                    -ms-transform: translateX(-50% )  rotate(90deg) ;
+                    -o-transform: translateX(-50% )  rotate(90deg) ;
+                    margin-bottom: 30px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:912px){
+    header{
+        .banner{
+            background-size: 100% 78% ;
+            margin-top: -180px ;
+            .text{
+                width: 60% ;
+            }
+        }
+    }
+}
+@media(max-width:575.98px){
+    header{
+        .banner{
+            background-size: cover ;
+            margin-top: -140px ;
+            .title{
+                width: 100% ;
+                text-align: center ;
+            }
+            .text{
+                width: 100% ;
+                text-align: center ;
+            }
+        }
+    }
+    .features{
+        .show-case{
+            .feature{
+                .content{
+                    .text{
+                        padding-inline: 50px ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    header{
+        .banner{
+            padding-inline: 10px ;
+        }
+    }
+    .features{
+        padding: 120px 10px ;
+        .image{
+            width: 90% ;
+        }
+        .show-case{
+            .feature{
+                .content{
+                    .text{
+                        padding-inline: 10px ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//rtl-responsive
+
+@media(max-width:1199.98px){
+    html[dir = "rtl"]{
+        .features{
+            .show-case{
+                .feature{
+                    .icon{
+                        right: 50% ;
+                        left: initial ;
+                        transform: translateX(50% )  rotate(90deg) ;
+                        -webkit-transform: translateX(50% )  rotate(90deg) ;
+                        -moz-transform: translateX(50% )  rotate(90deg) ;
+                        -ms-transform: translateX(50% )  rotate(90deg) ;
+                        -o-transform: translateX(50% )  rotate(90deg) ;
+                    }
+                }
+            }
+        }
+    }
+}
