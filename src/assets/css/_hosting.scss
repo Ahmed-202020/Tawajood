@@ -1,23 +1,137 @@
 header{
     .banner.banner-2{
+        position: relative;
         background-image: url("../img/Group\ 40880.png");
         background-repeat:no-repeat;
-        background-size: cover ;
-        background-position: center 45% ;
+        background-size: 100% 50% ;
+        background-position: center center ;
         text-align: center;
         color: $white ;
-        margin-top: 0 ;
-        padding: 100px 0 200px ;
-        .text{
+        margin-top: -430px  ;
+        padding: 525px 0  ;
+        .title{
+            font-size: 24pt;
+        }
+        .title , .text{
             width: 100%;
+            font-size: 20pt ;
         }
     }
-    .overlay-banner{
-        background-image: url("../img/bg.png");
-        background-position: center 100% ;
-        background-repeat:no-repeat;
-        background-size: cover ;
-        padding-block: 235px ;
+}
+.common-questions{
+    .title{
+        margin-bottom: 50px ;
+        .text{
+            color: $white ;
+        }
+    }
+    .accordion{
+        width: 75% ;
+        margin-inline: auto ;
+        .accordion-item{
+            border-radius: 8px ;
+            -webkit-border-radius: 8px ;
+            -moz-border-radius: 8px ;
+            -ms-border-radius: 8px ;
+            -o-border-radius: 8px ;
+            .accordion-header{
+                .accordion-button{
+                    padding: 25px 50px;
+                    box-shadow: none ;
+                    color: $btn-2 ;
+                    font-size: 17pt ;
+                    font-weight: bold ;
+                    background-color: $custom-white ;
+                    &::after{
+                        background-image: url("../icons/Icon\ ionic-ios-add.svg");
+                    }
+                    &:not(.collapsed)::after{
+                        background-image: url("../icons/Icon\ ionic-ios-remove.svg");
+                    }
+                }
+                .accordion-button:not(.collapsed){
+                    box-shadow: 0 -1px 1px $light-line inset;
+                }
+            }
+            .accordion-body{
+                padding: 20px 50px 80px;
+                color: $black ;
+            }
+            &:not(:last-child()){
+                margin-bottom: 10px ;
+            }
+        }
+    }
+}
+
+//rtl
+html[dir = "rtl"]{
+    .common-questions{
+        .accordion{
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button{
+                        &::after{
+                            margin-right: auto ;
+                            margin-left: 0 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:991.98px){
+    .common-questions{
+        .accordion{
+            width: 100% ;
+        }
+    }
+}
+@media(max-width:575.98px){
+    header{
+        .banner.banner-2{
+            margin-top: -305px;
+            padding: 370px 0;
+            .text{
+                padding-inline: 15px ;
+            }
+        }
+    }
+    .common-questions{
+        padding: 400px 25px 180px !important ;
+        .accordion{
+            .accordion-header{
+                .accordion-button{
+                    padding: 25px 20px  !important ;
+                }
+            }
+            .accordion-body{
+                padding: 20px 20px 80px ;
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .common-questions{
+        padding: 400px 10px 180px !important ;
+        .title{
+            font-size: 19pt ;
+        }
+        .accordion{
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button{
+                        padding: 25px 8px ;
+                        font-size: 13pt ;
+                    }
+                }
+                .accordion-body{
+                    padding: 20px 10px 80px ;
+                    font-size: 12pt ;
+                }
+            }
+        }
     }
 }
 
