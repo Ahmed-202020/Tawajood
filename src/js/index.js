@@ -1,9 +1,12 @@
 $(function(){
-    $(".navbar .navbar-nav .nav-link").on("click" , function(e){
-        // e.preventDefault();
-        // $(".navbar .navbar-nav .nav-link").removeClass("active") ; 
-        // $(this).addClass("active") ; 
-    }) ;
+    $(window).scroll(function(){
+        var position = $(this).scrollTop() ; 
+        if(position>=300){
+            $("header .navbar").addClass("custom-height") ;
+        }else{
+            $("header .navbar").removeClass("custom-height") ;
+        }
+    })
     $(".navbar .navbar-nav .lang").on("click" , function(){
         $(".navbar .navbar-nav .lang").removeClass("active") ; 
         if($(this).text()=== "العربية"){
