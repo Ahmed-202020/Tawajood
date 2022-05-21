@@ -1,0 +1,123 @@
+header{
+    .banner.banner-3{
+        background-image: url("../img/Group\ 40882.png");
+        .text{
+            margin-bottom: 150px ;
+        }
+    }
+}
+.custom-tools{
+    .title{
+        .text{
+            color: $white ;
+        }
+        margin-bottom: 20px ;
+    }
+    .breef{
+        margin-bottom: 150px ;
+        text-align: center ;
+        color: $white ; 
+        padding-inline: 300px ; 
+    }
+    .show-case{
+        .card{
+            .card-body{
+                .card-text{
+                    font-size: 15pt !important ;
+                }
+            }
+        }
+    }
+}
+body>.title{
+    @extend %title ; 
+    margin-top: 80px ;
+    margin-bottom: 20px ;
+}
+body>.breef{
+    padding-inline: 350px ;
+    text-align: center ;
+    color: $black ;
+}
+.custom-features{
+    .image{
+        margin-top: 200px ;
+    }
+}
+
+@media(max-width:1199.98px){
+    header{
+        .banner.banner-3{
+            background-size: 100% 90% ;
+            margin-top: -80px ;
+        }
+    }
+    .custom-features{
+        padding: 100px 50px ;
+    }
+    .custom-tools{
+        .breef{
+            padding-inline: 100px ; 
+        }
+    }
+}
+@media(max-width:1024px){
+    header{
+        .banner.banner-3{
+            padding-inline: 100px ;
+            .title{
+                font-size: 20pt ;
+            }
+            .text{
+                font-size: 14pt ;
+                margin-bottom: 0 ;
+            }
+        }
+    }
+}
+@media(max-width:912px){
+    .custom-features{
+        padding: 50px 50px 80px ;
+    }
+}
+@media(max-width:768px){
+    header{
+        .banner.banner-3{
+            padding-inline: 70px ;
+        }
+    }
+}
+@media(max-width:575.98px){
+    header{
+        .banner.banner-3{
+            background-size: inherit ;
+        }
+    }
+    .custom-features{
+        padding: 0 50px 50px ;
+    }
+    .custom-tools{
+        .title{
+            .text{
+                font-size: 20pt ;
+            }
+        }
+        .breef{
+            padding-inline: 20px ; 
+        }
+    }
+}
+@media(max-width:500px){
+    header{
+        .banner.banner-3{
+            padding-inline: 10px ;
+        }
+    }
+    .custom-tools{
+        .custom-tools{
+            .breef{
+                padding-inline: 10px ; 
+            }
+        }
+    }
+}

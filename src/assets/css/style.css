@@ -48,13 +48,13 @@ body ul {
   -webkit-filter: brightness(90%);
 }
 
-.our-services .title, .our-services-2 .title, .our-services.customer-opinions .title, .social-media .title {
+body > .title, .our-services .title, .our-services-2 .title, .our-services.customer-opinions .title, .social-media .title {
   text-align: center;
   font-size: 23pt;
   margin-bottom: 120px;
 }
 
-.our-services .title .text, .our-services-2 .title .text, .social-media .title .text {
+body > .title .text, .our-services .title .text, .our-services-2 .title .text, .social-media .title .text {
   color: #4080c2;
   font-weight: bold;
 }
@@ -1354,6 +1354,110 @@ html[dir="rtl"] .why-host-us .rating .feature .degree::before {
   html[dir="rtl"] .why-host-us .content .text {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+header .banner.banner-3 {
+  background-image: url("../img/Group 40882.png");
+}
+
+header .banner.banner-3 .text {
+  margin-bottom: 150px;
+}
+
+.custom-tools .title {
+  margin-bottom: 20px;
+}
+
+.custom-tools .title .text {
+  color: #ffffff;
+}
+
+.custom-tools .breef {
+  margin-bottom: 150px;
+  text-align: center;
+  color: #ffffff;
+  padding-inline: 300px;
+}
+
+.custom-tools .show-case .card .card-body .card-text {
+  font-size: 15pt !important;
+}
+
+body > .title {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+body > .breef {
+  padding-inline: 350px;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+.custom-features .image {
+  margin-top: 200px;
+}
+
+@media (max-width: 1199.98px) {
+  header .banner.banner-3 {
+    background-size: 100% 90%;
+    margin-top: -80px;
+  }
+  .custom-features {
+    padding: 100px 50px;
+  }
+  .custom-tools .breef {
+    padding-inline: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header .banner.banner-3 {
+    padding-inline: 100px;
+  }
+  header .banner.banner-3 .title {
+    font-size: 20pt;
+  }
+  header .banner.banner-3 .text {
+    font-size: 14pt;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 912px) {
+  .custom-features {
+    padding: 50px 50px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .banner.banner-3 {
+    padding-inline: 70px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header .banner.banner-3 {
+    background-size: inherit;
+  }
+  .custom-features {
+    padding: 0 50px 50px;
+  }
+  .custom-tools .title .text {
+    font-size: 20pt;
+  }
+  .custom-tools .breef {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  header .banner.banner-3 {
+    padding-inline: 10px;
+  }
+  .custom-tools .custom-tools .breef {
+    padding-inline: 10px;
   }
 }
 
@@ -2658,6 +2762,9 @@ html[dir="rtl"] .footer .logo .image {
   .our-services.customer-opinions .customer-slider .card .card-body .card-text {
     padding-inline: 10px;
   }
+  body > .breef {
+    padding-inline: 200px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2851,6 +2958,9 @@ html[dir="rtl"] .footer .logo .image {
   .our-services.why-us.projects .breef {
     padding-inline: 150px;
   }
+  body > .breef {
+    padding-inline: 100px;
+  }
 }
 
 @media (max-width: 820px) {
@@ -2974,6 +3084,9 @@ html[dir="rtl"] .footer .logo .image {
   .social-media .icons .icon {
     margin-bottom: 25px;
   }
+  body > .breef {
+    padding-inline: 50px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -3078,6 +3191,12 @@ html[dir="rtl"] .footer .logo .image {
   .footer .logo .image {
     width: 130px;
     margin-inline: auto;
+  }
+  body > .title {
+    font-size: 16pt;
+  }
+  body > .breef {
+    padding-inline: 20px;
   }
 }
 
