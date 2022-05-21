@@ -2,7 +2,7 @@
     padding: 400px 50px 500px ;
     background-image: url("../img/Group\ 40880.png");
     background-size: 100% 75% ;
-    margin-top: -330px ;
+    margin-top: -180px ;
     .title{
         font-weight: bolder ;
         font-size: 25pt ;
@@ -91,7 +91,7 @@ html[dir = "rtl"]{
 @media(max-width:1024px){
     .about-us.contact-us{
         background-size: 100% 60% ;
-        margin-top: -360px ;
+        margin-top: -240px ;
     }
     .contact.custom-contact{
         margin-top: -580px !important ;
@@ -100,7 +100,6 @@ html[dir = "rtl"]{
 @media(max-width:768px){
     .about-us.contact-us{
         background-size: cover ;
-        margin-top: -280px ;
         padding: 400px 50px 300px ;
     }
     .contact.custom-contact{

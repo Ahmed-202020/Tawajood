@@ -4,7 +4,7 @@
     background-repeat:no-repeat ;
     background-size: cover ;
     padding: 350px 50px 550px ;
-    margin-top: -200px ;
+    margin-top: -155px ;
     text-align: center ;
     color: $white ;
     .title{
@@ -98,7 +98,6 @@
 .about-us.projects{
     padding: 400px 50px 500px ;
     background-size: 100% 80%  ;
-    margin-top: -320px ;
 }
 .projects-page{
     padding-top: 80px !important ;
@@ -117,7 +116,6 @@ html[dir = "rtl"]{
     .about-us.projects{
         background-size: cover  ;
         padding: 400px 50px 410px ;
-        margin-top: -250px ;
     }
 }
 @media(max-width: 1199.98px){
@@ -165,7 +163,7 @@ html[dir = "rtl"]{
 }
 @media(max-width: 575.98px){
     .about-us{
-        margin-top: -265px ;
+        margin-top: -185px ;
         .text{
             padding-inline: 20px ;
         }
@@ -173,7 +171,7 @@ html[dir = "rtl"]{
 }
 @media(max-width: 500px){
     .about-us , .about-us.about-us.projects{
-        margin-top: -400px ;
+        margin-top: -300px ;
         padding: 500px 10px 400px ;
         .text{
             padding-inline: 10px ;

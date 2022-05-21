@@ -105,7 +105,7 @@ body ul {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 350px 50px 550px;
-  margin-top: -200px;
+  margin-top: -155px;
   text-align: center;
   color: #ffffff;
 }
@@ -218,7 +218,6 @@ body ul {
 .about-us.projects {
   padding: 400px 50px 500px;
   background-size: 100% 80%;
-  margin-top: -320px;
 }
 
 .projects-page {
@@ -234,7 +233,6 @@ html[dir="rtl"] .about-company .vision {
   .about-us.projects {
     background-size: cover;
     padding: 400px 50px 410px;
-    margin-top: -250px;
   }
 }
 
@@ -286,7 +284,7 @@ html[dir="rtl"] .about-company .vision {
 
 @media (max-width: 575.98px) {
   .about-us {
-    margin-top: -265px;
+    margin-top: -185px;
   }
   .about-us .text {
     padding-inline: 20px;
@@ -295,7 +293,7 @@ html[dir="rtl"] .about-company .vision {
 
 @media (max-width: 500px) {
   .about-us, .about-us.about-us.projects {
-    margin-top: -400px;
+    margin-top: -300px;
     padding: 500px 10px 400px;
   }
   .about-us .text, .about-us.about-us.projects .text {
@@ -321,7 +319,7 @@ html[dir="rtl"] .about-company .vision {
   padding: 400px 50px 500px;
   background-image: url("../img/Group 40880.png");
   background-size: 100% 75%;
-  margin-top: -330px;
+  margin-top: -180px;
 }
 
 .about-us.contact-us .title {
@@ -445,7 +443,7 @@ html[dir="rtl"] .about-us.contact-us .form-group .show-case .message {
 @media (max-width: 1024px) {
   .about-us.contact-us {
     background-size: 100% 60%;
-    margin-top: -360px;
+    margin-top: -240px;
   }
   .contact.custom-contact {
     margin-top: -580px !important;
@@ -455,7 +453,6 @@ html[dir="rtl"] .about-us.contact-us .form-group .show-case .message {
 @media (max-width: 768px) {
   .about-us.contact-us {
     background-size: cover;
-    margin-top: -280px;
     padding: 400px 50px 300px;
   }
   .contact.custom-contact {
@@ -510,7 +507,6 @@ header .banner {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 255px 50px;
-  margin-top: -100px;
 }
 
 header .banner .title {
@@ -755,7 +751,7 @@ html[dir="rtl"] .features.informations .show-case .feature .icon {
 @media (max-width: 912px) {
   header .banner {
     background-size: 100% 78%;
-    margin-top: -180px;
+    margin-top: -55px;
   }
   header .banner .text {
     width: 60%;
@@ -765,7 +761,6 @@ html[dir="rtl"] .features.informations .show-case .feature .icon {
 @media (max-width: 575.98px) {
   header .banner {
     background-size: cover;
-    margin-top: -140px;
   }
   header .banner .title {
     width: 100%;
@@ -848,7 +843,7 @@ header .banner.banner-2 {
   background-position: center center;
   text-align: center;
   color: #ffffff;
-  margin-top: -430px;
+  margin-top: -300px;
   padding: 525px 0;
 }
 
@@ -1295,7 +1290,7 @@ html[dir="rtl"] .why-host-us .rating .feature .degree::before {
 
 @media (max-width: 575.98px) {
   header .banner.banner-2 {
-    margin-top: -305px;
+    margin-top: -180px;
     padding: 370px 0;
   }
   header .banner.banner-2 .text {
@@ -1315,7 +1310,7 @@ html[dir="rtl"] .why-host-us .rating .feature .degree::before {
 @media (max-width: 500px) {
   header .banner.banner-2 {
     background-size: 100% 50%;
-    margin-top: -280px;
+    margin-top: -140px;
     padding: 300px 0;
   }
   header .banner.banner-2 .title {

@@ -7,7 +7,7 @@ header{
         background-position: center center ;
         text-align: center;
         color: $white ;
-        margin-top: -430px  ;
+        margin-top: -300px  ;
         padding: 525px 0  ;
         .title{
             font-size: 24pt;
@@ -433,7 +433,7 @@ html[dir = "rtl"]{
 @media(max-width:575.98px){
     header{
         .banner.banner-2{
-            margin-top: -305px;
+            margin-top: -180px;
             padding: 370px 0;
             .text{
                 padding-inline: 15px ;
@@ -458,7 +458,7 @@ html[dir = "rtl"]{
     header{
         .banner.banner-2{
             background-size: 100% 50% ;
-            margin-top: -280px ;
+            margin-top: -140px ;
             padding: 300px 0;
             .title{
                 font-size: 16pt ;
