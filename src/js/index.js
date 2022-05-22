@@ -46,9 +46,4 @@ $(function(){
             $(".messages .message").addClass("active") ; 
         }
     })
-
-
-
-    $(".content .customers").countTo() ; 
-    $(".content .projects").countTo() ; 
 });

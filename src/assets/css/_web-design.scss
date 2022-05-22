@@ -6,6 +6,11 @@ header{
         }
     }
 }
+.custom-features{
+    .image{
+        margin-top: 200px ;
+    }
+}
 .custom-tools{
     .title{
         .text{
@@ -29,9 +34,110 @@ header{
         }
     }
 }
+.compatible-design{
+    padding: 150px 50px ;
+    .title{
+        @extend %title ; 
+        margin-bottom: 20px ;
+    }
+    .breef{
+        text-align: center ; 
+        color: $black ; 
+        margin-bottom: 120px ;
+    }
+    .image{
+        width: 65% ; 
+        margin-inline: auto ;
+        img{
+            width: 100% ;
+        }
+    }
+}
+.info-web-design{
+    position: relative ;
+    padding: 250px 50px 400px ;
+    z-index: 1 ;
+    background-image: url("../img/Union\ 5.png") ; 
+    background-position: center center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    z-index: 1 ;
+    .content-1{
+        display: grid ; 
+        grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) ; 
+        .exp{
+            margin-top: 70px ;
+            .title{
+                color: $link-color ; 
+                font-weight: bold ; 
+                font-size: 22pt ;
+                margin-bottom: 20px ;
+            }
+            .text{
+                color: $black ; 
+            }
+        }
+        .image{
+            width: 85% ;
+            img{
+                width: 100% ;
+            }
+        }
+    }
+    .content-2{
+        grid-template-columns: repeat(auto-fill , minmax(calc(100% / 3) , 1fr)) ; 
+        margin-top: 100px ; 
+        gap: 50px ;
+        .show-case{
+            .exp{
+                margin-bottom: 120px ;
+                .text{
+                    font-size: 15pt ;
+                }
+            }
+            .benefits{
+                .benefit{
+                    display: flex ;
+                    align-items: center ;
+                    .icon{
+                        margin-right: 20px ;
+                        width: 80px ;
+                        height: 80px ;
+                        line-height: 70px ;
+                        text-align: center ;
+                        border: 2px solid $light-line ;
+                        background-color: $white ;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        img{
+                            width: 46px ;
+                        }
+                    }
+                    .content{
+                        .title{
+                            color: $link-color ;
+                        }
+                        .text{
+                            color: $black ;
+                        }
+                    }
+                    &:nth-child(2){
+                        margin-block: 20px ;
+                    }
+                }
+            }
+        }
+        .image{
+            width: 100% ;
+        }
+    }
+}
 body>.title{
     @extend %title ; 
-    margin-top: 80px ;
+    margin-top: 150px ;
     margin-bottom: 20px ;
 }
 body>.breef{
@@ -39,11 +145,27 @@ body>.breef{
     text-align: center ;
     color: $black ;
 }
-.custom-features{
-    .image{
-        margin-top: 200px ;
+
+
+//rtl
+
+html[dir = "rtl"]{
+    .info-web-design{
+        .content-2{
+            .show-case{
+                .benefits{
+                    .benefit{
+                        .icon{
+                            margin-left: 20px ;
+                            margin-right: 0 ;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
 
 @media(max-width:1199.98px){
     header{
@@ -74,6 +196,18 @@ body>.breef{
             }
         }
     }
+    .info-web-design{
+        text-align: center ;
+        .content-1{
+            grid-template-columns: repeat(auto-fill , minmax(calc(100% / 1) , 1fr));
+            .benefits{
+                .benefit{
+                    flex-direction: column ;
+                }
+            }
+        }
+
+    }
 }
 @media(max-width:912px){
     .custom-features{
@@ -84,6 +218,11 @@ body>.breef{
     header{
         .banner.banner-3{
             padding-inline: 70px ;
+        }
+    }
+    .compatible-design{
+        .image{
+            width: 100% ;
         }
     }
 }
@@ -106,12 +245,18 @@ body>.breef{
             padding-inline: 20px ; 
         }
     }
+    .info-web-design{
+        padding: 150px 50px 400px ;
+    }
 }
 @media(max-width:500px){
     header{
         .banner.banner-3{
             padding-inline: 10px ;
         }
+    }
+    .custom-features{
+        padding: 0 10px 50px ;
     }
     .custom-tools{
         .custom-tools{
@@ -120,4 +265,11 @@ body>.breef{
             }
         }
     }
+    .compatible-design{
+        padding: 150px 10px ;
+    }
+    .info-web-design{
+        padding: 150px 10px 400px ;
+    }
 }
+
