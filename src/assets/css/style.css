@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: lato;
   src: url("../fonts/Lato-Regular.ttf");
@@ -1629,24 +1630,217 @@ html[dir="rtl"] .info-web-design .content-2 .show-case .benefits .benefit .icon 
   margin-top: 130px;
 }
 
-html[dir="rtl"] .one img {
+html[dir="rtl"] .one-grocery img {
   content: url("../grocery/ar/1.png");
 }
 
-html[dir="rtl"] .two img {
+html[dir="rtl"] .two-grocery img {
   content: url("../grocery/ar/2.png");
 }
 
-html[dir="rtl"] .three img {
+html[dir="rtl"] .three-grocery img {
   content: url("../grocery/ar/3.png");
 }
 
-html[dir="rtl"] .four img {
+html[dir="rtl"] .four-grocery img {
   content: url("../grocery/ar/4.png");
 }
 
-html[dir="rtl"] .five img {
+html[dir="rtl"] .five-grocery img {
   content: url("../grocery/ar/5.png");
+}
+
+html[dir="rtl"] .one-mazad img {
+  content: url("../mazad/ar/1.png");
+}
+
+html[dir="rtl"] .two-mazad img {
+  content: url("../mazad/ar/2.png");
+}
+
+html[dir="rtl"] .three-mazad img {
+  content: url("../mazad/ar/3.png");
+}
+
+html[dir="rtl"] .four-mazad img {
+  content: url("../mazad/ar/4.png");
+}
+
+html[dir="rtl"] .five-mazad img {
+  content: url("../mazad/ar/5.png");
+}
+
+html[dir="rtl"] .one-mobelia img {
+  content: url("../mobelia/ar/1.png");
+}
+
+html[dir="rtl"] .two-mobelia img {
+  content: url("../mobelia/ar/2.png");
+}
+
+html[dir="rtl"] .three-mobelia img {
+  content: url("../mobelia/ar/3.png");
+}
+
+html[dir="rtl"] .four-mobelia img {
+  content: url("../mobelia/ar/4.png");
+}
+
+html[dir="rtl"] .five-mobelia img {
+  content: url("../mobelia/ar/5.png");
+}
+
+html[dir="rtl"] .one-closet img {
+  content: url("../my closet/ar/1.png");
+}
+
+html[dir="rtl"] .two-closet img {
+  content: url("../my closet/ar/2.png");
+}
+
+html[dir="rtl"] .three-closet img {
+  content: url("../my closet/ar/3.png");
+}
+
+html[dir="rtl"] .four-closet img {
+  content: url("../my closet/ar/4.png");
+}
+
+html[dir="rtl"] .five-closet img {
+  content: url("../my closet/ar/5.png");
+}
+
+html[dir="rtl"] .one-x-store img {
+  content: url("../xstore/ar/1.png");
+}
+
+html[dir="rtl"] .one-x-store img {
+  content: url("../xstore/ar/1.png");
+}
+
+html[dir="rtl"] .two-x-store img {
+  content: url("../xstore/ar/2.png");
+}
+
+html[dir="rtl"] .three-x-store img {
+  content: url("../xstore/ar/3.png");
+}
+
+html[dir="rtl"] .four-x-store img {
+  content: url("../xstore/ar/4.png");
+}
+
+html[dir="rtl"] .five-x-store img {
+  content: url("../xstore/ar/5.png");
+}
+
+html[dir="rtl"] .one-ynabea img {
+  content: url("../ynabea/ar/1.png");
+}
+
+html[dir="rtl"] .two-ynabea img {
+  content: url("../ynabea/ar/2.png");
+}
+
+html[dir="rtl"] .three-ynabea img {
+  content: url("../ynabea/ar/3.png");
+}
+
+html[dir="rtl"] .four-ynabea img {
+  content: url("../ynabea/ar/4.png");
+}
+
+html[dir="rtl"] .one-wash-box img {
+  content: url("../washbox/ar/1.png");
+}
+
+html[dir="rtl"] .two-wash-box img {
+  content: url("../washbox/ar/2.png");
+}
+
+html[dir="rtl"] .three-wash-box img {
+  content: url("../washbox/ar/3.png");
+}
+
+html[dir="rtl"] .four-wash-box img {
+  content: url("../washbox/ar/4.png");
+}
+
+html[dir="rtl"] .five-wash-box img {
+  content: url("../washbox/ar/5.png");
+}
+
+html[dir="rtl"] .one-wash-box-delivery img {
+  content: url("../washbox delivery/ar/1 – 6.png");
+}
+
+html[dir="rtl"] .two-wash-box-delivery img {
+  content: url("../washbox delivery/ar/2.png");
+}
+
+html[dir="rtl"] .three-wash-box-delivery img {
+  content: url("../washbox delivery/ar/3.png");
+}
+
+html[dir="rtl"] .one-wash-box-delivery img {
+  content: url("../washbox delivery/ar/4.png");
+}
+
+html[dir="rtl"] .one-bema img {
+  content: url("../beema/ar/1.png");
+}
+
+html[dir="rtl"] .two-bema img {
+  content: url("../beema/ar/2.png");
+}
+
+html[dir="rtl"] .three-bema img {
+  content: url("../beema/ar/3.png");
+}
+
+html[dir="rtl"] .four-bema img {
+  content: url("../beema/ar/4.png");
+}
+
+html[dir="rtl"] .five-bema img {
+  content: url("../beema/ar/5.png");
+}
+
+html[dir="rtl"] .one-zabeeha img {
+  content: url("../zabeeha/ar/1.png");
+}
+
+html[dir="rtl"] .two-zabeeha img {
+  content: url("../zabeeha/ar/2.png");
+}
+
+html[dir="rtl"] .three-zabeeha img {
+  content: url("../zabeeha/ar/3.png");
+}
+
+html[dir="rtl"] .four-zabeeha img {
+  content: url("../zabeeha/ar/4.png");
+  width: 100%;
+}
+
+html[dir="rtl"] .one-quest img {
+  content: url("../quest/ar/1.png");
+}
+
+html[dir="rtl"] .two-quest img {
+  content: url("../quest/ar/2 – 1.png");
+}
+
+html[dir="rtl"] .three-quest img {
+  content: url("../quest/ar/3.png");
+}
+
+html[dir="rtl"] .four-quest img {
+  content: url("../quest/ar/4.png");
+}
+
+html[dir="rtl"] .five-quest img {
+  content: url("../quest/ar/5.png");
 }
 
 @media (min-width: 360px) and (max-width: 361px) {
