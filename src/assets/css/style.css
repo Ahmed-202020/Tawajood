@@ -104,9 +104,9 @@ body ul {
   background-image: url("../img/Group 40880.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 350px 50px 550px;
-  margin-top: -155px;
+  background-size: 100% 58%;
+  padding: 550px 50px;
+  margin-top: -370px;
   text-align: center;
   color: #ffffff;
 }
@@ -127,7 +127,7 @@ body ul {
 
 .about-company {
   padding: 450px 50px 200px;
-  margin-top: -400px;
+  margin-top: -600px;
   z-index: -1;
   background-color: #f6faff;
   position: relative;
@@ -218,7 +218,8 @@ body ul {
 
 .about-us.projects {
   padding: 400px 50px 500px;
-  background-size: 100% 80%;
+  background-size: 100% 60%;
+  margin-top: -215px;
 }
 
 .projects-page {
@@ -230,13 +231,6 @@ html[dir="rtl"] .about-company .vision {
   left: initial;
 }
 
-@media (max-width: 1399.98px) {
-  .about-us.projects {
-    background-size: cover;
-    padding: 400px 50px 410px;
-  }
-}
-
 @media (max-width: 1199.98px) {
   .about-us .text {
     padding-inline: 200px;
@@ -244,8 +238,15 @@ html[dir="rtl"] .about-company .vision {
 }
 
 @media (max-width: 1024px) {
+  .about-us {
+    background-size: cover;
+    padding: 550px 50px 350px;
+  }
   .about-us .text {
     padding-inline: 100px;
+  }
+  .about-company {
+    margin-top: -400px;
   }
 }
 
@@ -290,14 +291,19 @@ html[dir="rtl"] .about-company .vision {
   .about-us .text {
     padding-inline: 20px;
   }
+  .about-us.projects {
+    background-size: cover;
+    padding: 450px 50px 300px;
+    margin-top: -235px;
+  }
 }
 
 @media (max-width: 500px) {
-  .about-us, .about-us.about-us.projects {
+  .about-us, .about-us.projects {
     margin-top: -300px;
     padding: 500px 10px 400px;
   }
-  .about-us .text, .about-us.about-us.projects .text {
+  .about-us .text, .about-us.projects .text {
     padding-inline: 10px;
   }
   .about-company {
@@ -319,8 +325,8 @@ html[dir="rtl"] .about-company .vision {
 .about-us.contact-us {
   padding: 400px 50px 500px;
   background-image: url("../img/Group 40880.png");
-  background-size: 100% 75%;
-  margin-top: -180px;
+  background-size: 100% 60%;
+  margin-top: -235px;
 }
 
 .about-us.contact-us .title {
@@ -2097,8 +2103,8 @@ body > .overlay {
   background-image: url("../img/Group 40878.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-block: 340px;
+  background-size: 100% 80%;
+  padding-block: 300px;
   margin-top: -465px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2117,7 +2123,7 @@ body > .overlay {
 
 .call-us .show-case {
   text-align: center;
-  margin-top: 160px;
+  margin-top: 200px;
 }
 
 .call-us .show-case .title {
@@ -2250,7 +2256,11 @@ body > .overlay {
 
 .call-us.hosting-services {
   background-image: url("../img/Group 40879.png");
-  padding-block: 340px;
+  padding-block: 300px 350px;
+}
+
+.call-us.hosting-services .show-case {
+  margin-top: 150px;
 }
 
 .call-us.hosting-services .show-case .text {
@@ -3280,6 +3290,13 @@ html[dir="rtl"] .footer .logo .image {
   .our-services-2 .show-case .contents .text {
     min-height: 272px;
   }
+  .call-us.hosting-services {
+    background-size: cover;
+    padding-block: 350px 280px;
+  }
+  .call-us.hosting-services .show-case > .title {
+    margin-bottom: 40px;
+  }
   .our-services.customer-opinions .breef {
     padding-inline: 150px;
   }
@@ -3444,6 +3461,9 @@ html[dir="rtl"] .footer .logo .image {
     -ms-grid-columns: (minmax(calc(100% / 2), 1fr))[auto-fill] !important;
         grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr)) !important;
   }
+  .call-us {
+    background-size: cover;
+  }
   .call-us .show-case .text {
     padding-inline: 45px;
   }
@@ -3500,9 +3520,6 @@ html[dir="rtl"] .footer .logo .image {
   .contact {
     margin-top: -200px;
     padding: 230px 50px 50px;
-  }
-  .call-us {
-    padding-block: 390px;
   }
   .call-us .show-case .title {
     font-size: 14pt;

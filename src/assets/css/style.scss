@@ -215,8 +215,8 @@ body>.overlay{
     background-image: url("../img/Group\ 40878.png");
     background-position: center center ;
     background-repeat: no-repeat ;
-    background-size: cover ;
-    padding-block: 340px  ;
+    background-size: 100% 80% ;
+    padding-block: 300px  ;
     margin-top: -465px ;
     display: flex ;
     flex-direction: column;
@@ -224,7 +224,7 @@ body>.overlay{
     justify-content: center ;
     .show-case{
         text-align: center ;
-        margin-top: 160px ;
+        margin-top: 200px ;
         .title{
             color: $white;
             font-weight: bold ;
@@ -338,8 +338,9 @@ body>.overlay{
 }
 .call-us.hosting-services{
     background-image: url("../img/Group\ 40879.png");
-    padding-block: 340px   ;
+    padding-block: 300px 350px  ;
     .show-case{
+        margin-top: 150px ;
         .text{
             padding-inline: 0 ;
         }
@@ -1386,6 +1387,15 @@ html[dir = "rtl"]{
             }
         }
     }
+    .call-us.hosting-services{
+        background-size: cover ;
+        padding-block: 350px 280px ;
+        .show-case{
+            &>.title{
+                margin-bottom: 40px ;
+            }
+        }
+    }
     .our-services.customer-opinions{
         .breef{
             padding-inline: 150px ;
@@ -1567,6 +1577,7 @@ html[dir = "rtl"]{
         }
     }
     .call-us{
+        background-size: cover ;
         .show-case{
             .text{
                 padding-inline: 45px ;
@@ -1647,7 +1658,6 @@ html[dir = "rtl"]{
         padding: 230px 50px 50px ;
     }
     .call-us{
-        padding-block: 390px ;
         .show-case{
             .title{
                 font-size: 14pt ;
